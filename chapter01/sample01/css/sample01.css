@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* clearfix */
+.cf { zoom: 1; }
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+ 공통설정 및 스마트 폰 용 스타일
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  background-color: #fff;
+}
+header {
+  text-align: center;
+  padding-left: 6%;
+  background-color: #100066;
+}
+header h1 {
+  font-size: 2.3em;
+  padding: 0.4em 0 0.4em 0;
+  margin: 0 0 0.2em;
+  color: #fff;
+}
+nav {
+  margin: 0;
+  background-color: #001cdf;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: block;
+  width: 100%;
+  margin: 0 ;
+  text-align: center;
+  line-height: 2.0em;
+  color:#fff;
+  border-bottom: 1px solid #fff;
+}
+#contents {
+  width: 80%;
+  margin: 1em auto 1em;
+}
+#contents h1{
+  font-weight: bold;
+}
+section {
+  margin: 0 0 1em 0;
+}
+aside > section{
+  height:130px;
+  background-color: #00ccff;
+  padding: 15px 0 0 20px;
+}
+article > section{
+  border-bottom: 1px solid #ccc;
+}
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+  Media Queries 에 따른 전환
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+/* 태블릿 용 스타일 ：481px ～ 768px */
+@media only screen and (min-width: 481px) {
+ nav {
+   margin: 0;
+   padding: 0 0 0 7%;
+ }
+ nav ul {
+   padding: 0;
+ }
+ nav ul li {
+  float:left;
+  width: 100px;
+  margin: 0;
+  text-align: center;
+  line-height: 3.0em;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+ }
+ #contents_menu1 {
+   width: 45%;
+   float: left;
+ }
+ #contents_menu2 {
+   width: 45%;
+   float: right;
+ }
+}
+
+/*  PC용 스타일 ：769px～960px */
+@media only screen and (min-width: 769px) {
+ article.main {
+   width: 65%;
+   float: right;
+ }
+ aside.contents_menu {
+   width: 30%;
+   float: left;
+ }
+ aside.contents_menu ul li {
+   font-size: 1.1em;
+ }
+ #contents_menu1,
+ #contents_menu2 {
+   width: 95%;
+   float: none;
+ }
+}

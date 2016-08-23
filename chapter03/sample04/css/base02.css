@@ -1,0 +1,362 @@
+﻿@charset "utf-8";
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+Base： 모바일 레이아웃
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+/*==============
+ body
+===============*/
+body {
+	width: 100%;
+	background-color:#FFF;
+	font-family: "돋움", "굴림", "Malgu Gothic", "Times New Roman", Dotum, sans-serif;
+	color:#000;
+}
+/*==============
+ header
+===============*/
+header {
+	text-align:center;
+}
+/*logo설정*/
+header h1 {
+	margin:0 auto;
+	padding:15px 5px 7px 5px;
+	width:90%;
+}
+header h1 img {
+	width:100%;
+	max-width:265px;
+}
+/*s_nav설정*/
+header {
+	/*#s_nav의 센터링에 필요*/
+	position:relative;
+	overflow:hidden;
+}
+header ul#s_nav {
+	margin-bottom:15px;
+	
+	/*#s_nav의 센터링에 필요*/
+	position:relative;
+	left:50%;
+	float:left;
+}
+header ul#s_nav li {
+	float:left;
+	
+	/*#s_nav의 센터링에 필요*/
+	position:relative;
+	left: -50%;
+}
+header ul#s_nav li a {
+	display:block;
+	font-size:0.8em;
+	margin-right:20px;
+	padding-left:20px;
+}
+header ul#s_nav li.contact a {
+	background:url(../images/icn_contact.jpg) no-repeat left center;
+}
+header ul#s_nav li.news a {
+	background:url(../images/icn_news.jpg) no-repeat left center;
+}
+header ul#s_nav li.sitemap a {
+	background:url(../images/icn_sitemap.jpg) no-repeat left center;	
+}
+/*topImage설정*/
+header p {
+	width:100%;
+}
+header p img {
+	width:100%;
+	height:auto;
+	max-width:960px;
+}
+
+/*==============
+ nav
+===============*/
+nav ul {
+	margin-bottom:15px;
+}
+nav ul li {
+	text-align:center;
+	float:left;
+	width:50%;
+	border-bottom:2px solid #000;
+}
+/*css3 li의 짝수 지정*/
+nav ul li:nth-child(odd) {
+	width:49%;
+	border-right:1px dotted #000;
+}
+nav ul li a{
+	display:block;
+	width:100%;
+}
+
+/*==============
+ contents
+===============*/
+div#contents {
+	background:url(../images/bg_footer.jpg) no-repeat bottom;
+	padding-bottom:90px;
+}
+/*==============
+ contents -> work
+===============*/
+div#contents section#work h2 {
+	margin:0 0 15px 5px;
+}
+div#contents section#work article {
+	text-align:center;
+	width:50%;
+	min-width:120px;
+	float:left;
+	margin-bottom:30px;
+}
+div#contents section#work article img {
+	width:100%;
+	height:auto;
+	max-width:184px;
+}
+div#contents section#work article h3 {
+	font-size:0.9em;
+	font-weight:bold;
+}
+div#contents section#work article p {
+	text-align:left;
+	font-size:0.7em;
+	line-height:2.0em;
+	padding:0 15px;
+}
+/*==============
+ contents -> NEWS
+===============*/
+div#contents section#news {
+	margin-left:5px;
+}
+div#contents section#news h2 {
+	margin:0 5px 15px 0;
+	background:url(../images/bg_headerLine.jpg) repeat-x bottom;
+	padding-bottom:10px;
+}
+div#contents section#news article h3 {
+	font-size:0.7em;
+	background:url(../images/icn_arrow.jpg) no-repeat center left;
+	margin-bottom:10px;
+	padding-left:7px;
+}
+div#contents section#news article p {
+	line-height:1.4em;
+	font-size:0.8em;
+	margin:0 0 20px 10px;
+}
+div#contents section#news article p a {
+	text-decoration:underline;
+}
+div#contents section#news article p a:hover {
+	text-decoration:none;
+}
+/*==============
+ contents -> INFOMATION
+===============*/
+div#contents section#infomation {
+	text-align:center;
+	margin-left:5px;
+}
+div#contents section#infomation h2 {
+	text-align:left;
+	margin:0 5px 15px 0;
+	background:url(../images/bg_headerLine.jpg) repeat-x bottom;
+	padding-bottom:10px;
+}
+div#contents section#infomation ul li {
+	width:100%;
+	margin-bottom:5px;
+}
+div#contents section#infomation ul li img {
+	width:98%;
+	height:auto;
+	max-width:470px;
+}
+/*==============
+ pagetopBtn
+===============*/
+a#pagetopBtn img {
+	position:fixed;
+	bottom:10px;
+	right:1px;
+}
+/*==============
+ footer
+===============*/
+footer {
+	border-top:10px solid #000;
+}
+footer div {
+	margin:20px 0 0 20px;
+}
+footer div p {
+	font-size:0.7em;
+	line-height:2.0em;
+}
+footer div small {
+	font-size:0.6em;
+}
+
+/*==============
+ 공통 설정
+===============*/
+/* a link setting */
+a {
+	color:#000;
+	text-decoration:none;
+}
+a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
+/* h2 setting */
+
+/* section setting */
+
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+  Media Queries 에 따른 전환
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+/* 모바일 레이아웃：481px ～ 768px */
+@media only screen and (min-width: 481px) {
+
+}
+
+/*  태블릿 레이아웃；769px～960px */
+@media only screen and (min-width: 769px) {
+/*logo설정*/
+header h1 {
+	text-align:left;
+	padding:15px 5px 7px 5px;
+	width:280px;
+	float:left;
+}
+header h1 img {
+	width:100%;
+}
+/*s_nav설정*/
+header {
+	/*#s_nav 센터링 해제*/
+	position:static;
+	overflow:visible;
+}
+header ul#s_nav {
+	float:right;
+	margin-top:20px;
+	/*#s_nav 센터링 해제*/
+	position:static;
+}
+header ul#s_nav li {
+	float:left;
+	/*#s_nav 센터링 해제*/
+	position:static;
+}
+/* nav */
+nav {
+	text-align:center;
+	border-bottom:3px double #000;
+	margin:10px auto 15px auto;
+}
+nav ul li {
+	text-align:center;
+	float:left;
+	width:16%;
+	border-bottom:none;
+	border-right:1px dotted #000;
+}
+/* nav설정 */
+/*css3 li의 짝수 지정*/
+nav ul li:nth-child(odd) {
+	width:17%;
+	border-bottom:none;
+}
+nav ul li.home {
+	border-left:none;
+	margin-left:1px;
+}
+nav ul li.contact {
+	border-right:none;
+}
+nav ul li a{
+	display:block;
+}
+/* contents -> work */
+div#contents section#work article {
+	width:33%;
+}
+div#contents section#work article h3 {
+	line-height:2.0em;
+}
+div#contents section#work article p {
+	font-size:0.8em;
+	line-height:2.0em;
+}
+}
+
+/*  961px～ */
+@media only screen and (min-width: 961px) {
+/* header */
+header {
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+header h1 {
+	
+}
+/* nav */
+nav {
+  max-width: 960px;
+}
+nav ul{
+	margin-left:auto;
+	margin-right:auto;
+}
+nav ul li:nth-child(odd) {
+	border-bottom:none;
+}
+nav ul li.home {
+	border-left:1px dotted #000;
+}
+nav ul li.contact {
+	border-right:1px dotted #000;
+}
+/*contents*/
+div#contents {
+	max-width:960px;
+	margin:0 auto;	
+}
+/* contents -> work */
+div#contents section#work article {
+	width:20%;
+}
+div#contents section#work article h3 {
+	line-height:2.2em;
+}
+/* contents -> NEWS */
+div#contents section#news {
+	width:49%;
+	float:left;
+}
+/* contents -> INFOMATION */
+div#contents section#infomation {
+	width:49%;
+	float:right;
+}
+/* footer */
+footer {
+	text-align:center;
+}
+
+}

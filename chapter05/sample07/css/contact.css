@@ -1,0 +1,308 @@
+﻿@charset "utf-8";
+
+/* /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_
+ 모든 디바이스 공통 스타일과 스마트 폰 및 소형 태블릿 대상 레이아웃 지정
+/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_*/
+
+/*==========================================
+ body
+===========================================*/
+body {
+  width: 100%;
+  background-color:#FFF;
+  font-family: "돋움", "굴림", "Malgu Gothic", "Times New Roman", Dotum, sans-serif;
+  color:#000;
+}
+a {
+  color:#000;
+  text-decoration:none;
+}
+a:hover {
+  color:#333;
+  text-decoration:underline;
+}
+/*==========================================
+ 헤더 스타일
+===========================================*/
+header {
+  text-align:center;
+}
+header h1 {
+  margin:0 auto;
+  padding:15px 5px 7px 5px;
+  width:90%;
+}
+header h1 img {
+  width:100%;
+  max-width:265px;
+}
+header {
+  position:relative;
+  overflow:hidden;
+}
+header ul#s_nav {
+  margin-bottom:15px;
+  position:relative;
+  left:50%;
+  float:left;
+}
+header ul#s_nav li {
+  float:left;
+  position:relative;
+  left: -50%;
+}
+header ul#s_nav li a {
+  display:block;
+  font-size:0.8em;
+  margin-right:20px;
+  padding-left:20px;
+}
+header ul#s_nav li.contact a {
+  background:url(../images/icn_contact.jpg) no-repeat left center;
+}
+header ul#s_nav li.news a {
+  background:url(../images/icn_news.jpg) no-repeat left center;
+}
+header ul#s_nav li.sitemap a {
+  background:url(../images/icn_sitemap.jpg) no-repeat left center;	
+}
+header p {
+  width:100%;
+}
+header p img {
+  width:100%;
+  height:auto;
+  max-width:960px;
+}
+
+/*==========================================
+ 글로벌 네비게이션 스타일
+===========================================*/
+nav ul {
+  margin-bottom:15px;
+}
+nav ul li {
+  text-align:center;
+  float:left;
+  width:50%;
+  border-bottom:2px solid #000;
+}
+nav ul li:nth-child(odd) {
+  width:49%;
+  border-right:1px dotted #000;
+}
+nav ul li a{
+  display:block;
+  width:100%;
+}
+.active {
+  background-color:#000000;
+}
+
+/*==========================================
+ 컨텐츠 영역 전체 스타일
+===========================================*/
+div#contents {
+  background:url(../images/bg_footer.jpg) no-repeat bottom;
+  padding-bottom:90px;
+}
+/*==========================================
+ 컨텐츠 영역 -> WORKS 스타일
+===========================================*/
+div#contents section#contact h2 {
+  margin:0 0 35px 5px;
+}
+div#contents section#contact p {
+  margin:0 0 15px 5px;
+}
+.tbl-layout {  
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: none;
+  background-color: #fff;
+}
+.tbl-layout dt,
+.tbl-layout dd {
+  padding: 10px 20px;
+}
+.tbl-layout dt {
+  font-weight: bold;
+  font-size:14px;
+  color:#fff;
+  background-color: #2F4C5E;
+  border-top:1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.tbl-layout dd {
+  font-size:10px;
+  padding-top:10px;
+  padding-bottom:20px;
+  border-bottom: 1px solid #ccc;
+}
+.tbl-layout dd textarea {
+  width:100%;
+}
+.tbl-layout .w300{
+  font-size:12px;
+  width:100%;	
+  height:24px;
+}
+.tbl-layout .w70{
+  font-size:12px;
+  width:55px;	
+  height:24px;
+}
+.tbl-layout .bdchange{
+  border-bottom:none;	
+}
+p.btn {
+  text-align: center;
+  padding: 25px 0;
+}
+p.btn input {
+  width:198px;
+}
+
+/*==========================================
+ 페이지 상단으로 가는 버튼 스타일
+===========================================*/
+a#pagetopBtn img {
+  position:fixed;
+  bottom:10px;
+  right:1px;
+}
+/*==========================================
+ 푸터 스타일
+===========================================*/
+footer {
+  border-top:10px solid #000;
+}
+footer div {
+  margin:20px 0 0 20px;
+}
+footer div p {
+  font-size:0.7em;
+  line-height:2.0em;
+}
+footer div small {
+	font-size:0.6em;
+}
+
+/* PC대상 및 대형 태블릿 대상 레이아웃 지정：769px～960px */
+@media only screen and (min-width: 769px) {
+  header {
+    position:static;
+    overflow:visible;
+  }
+  header h1 {
+    text-align:left;
+    padding:15px 5px 7px 5px;
+    width:280px;
+    float:left;
+  }
+  header h1 img {
+    width:100%;
+  }
+  header ul#s_nav {
+    float:right;
+    margin-top:20px;
+    position:static;
+  }
+  header ul#s_nav li {
+    float:left;
+    position:static;
+  }
+  nav {
+    text-align:center;
+    border-bottom:3px double #000;
+    margin:10px auto 15px auto;
+  }
+  nav ul li {
+    text-align:center;
+    float:left;
+    width:16%;
+    border-bottom:none;
+    border-right:1px dotted #000;
+  }
+  nav ul li:nth-child(odd) {
+    width:17%;
+    border-bottom:none;
+  }
+  nav ul li.home {
+    border-left:none;
+    margin-left:1px;
+  }
+  nav ul li.contact {
+    border-right:none;
+  }
+  nav ul li a{
+    display:block;
+  }
+  .tbl-layout {  
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: none;
+	background: #fff url(../images/table_bg.gif) repeat-y -39px 0;
+  }
+  .tbl-layout dt,
+  .tbl-layout dd {
+    padding: 20px;
+  }
+  .tbl-layout dt {
+    font-size:12px;
+    clear: both;
+    float: left;
+    width: 150px;
+    border-top: 1px solid #FFFFFF;
+  }
+  .tbl-layout dd {
+    font-size:12px;
+    padding-left: 210px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #FFFFFF;
+  }
+  .tbl-layout .w300{
+    width:300px;	
+    height:24px;
+  }
+  .tbl-layout .w70{
+    width:70px;	
+    height:24px;
+  }
+  .tbl-layout .bdchange{
+    border-bottom:1px solid #ccc;
+  }
+}
+
+/* PC대상 레이아웃 지정：961px이상에서는 고정 레이아웃 */
+@media only screen and (min-width: 961px) {
+  header {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  nav {
+    max-width: 960px;
+  }
+  nav ul{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  nav ul li:nth-child(odd) {
+    border-bottom:none;
+  }
+  nav ul li.home {
+    border-left:1px dotted #000;
+  }
+  nav ul li.contact {
+    border-right:1px dotted #000;
+  }
+  div#contents {
+    max-width:960px;
+    margin:0 auto;
+  }
+  footer {
+    text-align:center;
+  }
+}

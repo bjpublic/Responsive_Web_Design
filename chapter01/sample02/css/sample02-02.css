@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* clearfix */
+.cf { zoom: 1; }
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+
+/**
+* CSS initialize
+* 스크린 사이즈 : 480px
+*/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  background-color: #fff;
+}
+#stage {
+  margin: 0;
+}
+header {
+  text-align: center;
+  color: #fff;
+  background-color: #60001e;
+}
+header h1 {
+  font-size: 2.3em;
+  padding: 0.4em 0 0.4em 0;
+  margin: 0 0 0.2em;
+}
+nav {
+  margin: 0;
+  background-color: #99331e;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float:left;
+  width: 150px;
+  margin: 0 0 0 10px;
+  text-align: center;
+  line-height: 3.0em;
+  color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+#contents {
+  width: 78.125%;
+  margin: 1em auto 1em;
+}
+#contents h1{
+  font-weight: bold;
+}
+section {
+  margin: 0 0 1em 0;
+}
+aside > section{
+  height: 130px;
+  background-color: #ffbfc7;
+  padding: 15px 0 0 20px;
+}
+article > section{
+  border-bottom: 1px solid #999;
+}
+footer {
+  width: 100%;
+  text-align: center;
+}

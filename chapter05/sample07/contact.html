@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/contact.css">
+<title>sample7 | Contact</title>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="stage"> 
+  <header id="header">
+    <h1 id="top"><img src="images/img_logo.jpg" alt="Responsive,Inc."></h1>
+    <ul id="s_nav" class="cf">
+      <li class="contact"><a href="#">contact</a></li>
+      <li class="news"><a href="#">news</a></li>
+      <li class="sitemap"><a href="#">sitemap</a></li>
+    </ul>
+    <p><img src="images/image_contact.jpg" alt="Contact to us"></p>
+  </header>
+  
+  <nav id="nav">
+    <ul class="cf">
+      <li class="home"><a href="#"><img src="images/nav_home.jpg" width="51" height="48" alt="home"></a></li>
+      <li class="service"><a href="#"><img src="images/nav_service.jpg" width="63" height="48" alt="service"></a></li>
+      <li class="works"><a href="#"><img src="images/nav_works.jpg" width="50" height="48" alt="works"></a></li>
+      <li class="company"><a href="#"><img src="images/nav_company.jpg" width="88" height="48" alt="company"></a></li>
+      <li class="recruit"><a href="#"><img src="images/nav_recruit.jpg" width="59" height="48" alt="recruit"></a></li>
+      <li class="contact active"><a href="#"><img src="images/nav_contact_on.jpg" width="74" height="48" alt="contact"></a></li>
+    </ul>
+  </nav>
+  
+  <div id="contents" class="cf"> 
+  
+    <!-- contact -->
+    <section id="contact" class="cf">
+        <h2><img src="images/h2_Contact.jpg" width="87" height="15" alt="Contact"></h2>
+        <p>필요 사항을 입력하고 마지막으로 [입력 내용을 확인함]을 눌러 주십시오.</p>
+        <form method="POST" action="">
+          <dl class="tbl-layout">
+            <dt>문의 내용</dt>
+            <dd>
+              <select name="inquiry_select">
+                <option value="" selected>선택하여 주십시오</option>
+                <option value="1">반응에 대한 문의</option>
+                <option value="2">회사에 대한 의견 및 요청 사항</option>
+                <option value="3">기타</option>
+              </select>
+            </dd>
+            <dt>상세내용</dt>
+            <dd>
+              <textarea name="inquiry_text" rows="10"></textarea>
+              <span>（최대4,000자）</span></dd>
+            <dt>이름</dt>
+            <dd>
+              <input type="text" class="w300" name="username">
+            </dd>
+            <dt>닉네임</dt>
+            <dd>
+              <input type="text" class="w300" name="username_kana">
+            </dd>
+            <dt>전화번호</dt>
+            <dd>
+              <input type="text" class="w70" name="tel1">－
+              <input type="text" class="w70" name="tel2">－
+              <input type="text" class="w70" name="tel3">
+              <span>（숫자）</span></dd>
+            <dt>메일 주소</dt>
+            <dd>
+              <input type="text" class="w300" name="email">
+              <span>（영숫자）</span></dd>
+            <dt>확인용 메일 주소</dt>
+            <dd class="bdchange">
+              <input type="text" class="w300" name="email2">
+              <span>（영숫자）</span></dd>
+          </dl>
+          <p class="btn">
+            <input type="image" alt="입력 내용 확인"  src="images/btn_check.jpg" value="submit">
+          </p>
+        </form>
+    </section>
+  </div>
+
+  <a id="pagetopBtn" href="#top"><img src="images/icn_pagetop.jpg" width="40" height="60" alt="pagetop"></a>
+
+  <footer id="footer">
+    <div>
+      <img src="images/img_logo_s.jpg" width="164" height="18" alt="Responsive,Inc">
+      <p>반응형 주식회사<br>본사:우XXX-XXXX<br>서울시 중구 무교동 반응형 빌딩１층</p>
+      <small>Copyright &copy; 2013 Responsive corporation. All Rights Reserved.</small>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
